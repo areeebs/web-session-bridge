@@ -1,0 +1,21 @@
+{
+  "name": "web-session-bridge",
+  "version": "0.1.0",
+  "description": "Local MCP bridge that lets an AI agent drive your logged-in browser sessions, with a site allowlist and an append-only audit log.",
+  "type": "module",
+  "bin": {
+    "web-session-bridge": "src/index.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/index.js mcp"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.48.0"
+  },
+  "license": "MIT"
+}
